@@ -1,4 +1,4 @@
-package jse18.JavaLang;
+/*package jse18.JavaLang;
 
 import java.io.PrintStream;
 
@@ -22,4 +22,4 @@ public class Casting {
 		
 	}
 	
-}
+}*/

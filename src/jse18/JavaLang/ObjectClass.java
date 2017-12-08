@@ -1,3 +1,4 @@
+/*
 package jse18.JavaLang;
 
 import java.io.PrintStream;
@@ -30,3 +31,4 @@ public class ObjectClass {
 	}
 	
 }
+*/

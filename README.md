@@ -40,106 +40,106 @@ A divisão é feita da seguinte forma:
     * Utilizando o exemplo da bicicleta, uma classe é um conjunto de códigos de programação que definem os estados e comportamentos desse objeto.
     * Podemos fabricar mais de uma bicicleta (objeto) a partir de um mesmo modelo (classe), gerando assim instâncias de classes que se tornam objetos.
 
-    `
-        class Bicycle {
+```java
+class Bicycle {
 
-            int speed = 0;
-            int gear = 1;
+    int speed = 0;
+    int gear = 1;
 
-            void changeGear(int newValue) {
-                gear = value;
-            }
+    void changeGear(int newValue) {
+        gear = value;
+    }
 
-            void speedUp(int increment) {
-                speed = speed + increment;
-            }
+    void speedUp(int increment) {
+        speed = speed + increment;
+    }
 
-            void brake(int decrement) {
-                speed = speed - decrement;
-            }
-        }
-    `
+    void brake(int decrement) {
+        speed = speed - decrement;
+    }
+}
+```
 
-    * No exemplo acima, os campos speed e gear representam os estados do objeto e os métodos speedUp e brake representam a interação com o objeto.
+> No exemplo acima, os campos speed e gear representam os estados do objeto e os métodos speedUp e brake representam a interação com o objeto.
 
 * Herança
     * Diferentes tipos de objetos geralmente possuem características em comum.
     * Por exemplo, bicicletas comuns, bicicletas para esporte e etc. compartilham de estados e interações em comum, como marcha e velocidade.
     * Através da herança, é possível que uma classe herde os estados e interações de outra classe e se preocupe apenas em codificar o que a torna única
 
-    `
-        class MountainBike extends Bicycle {
+```java
+class MountainBike extends Bicycle {
 
-            // fields and methods uniques for mountain bikes
-        }
-    `
+    // fields and methods uniques for mountain bikes
+}
+```
 
-    * No exemplo acima, a palavra reservada extends irá herder todos os campos e métodos da classe Bicycle
+> No exemplo acima, a palavra reservada extends irá herder todos os campos e métodos da classe Bicycle
 
 * Interface
     * Em um carro, as interações tem que seguir um padrão (acelerar, frear, ligar o farol e etc.).
     * Porém um carro pode ser criado por diversos fornecedores diferentes, mas que devem seguir um mesmo padrão (contrato) ao criar esse carro, afinal todos os carros precisam frear, acelerar e etc.
     * Uma interface é um contrato estabelecido com uma classe para que ela tenha métodos (interações) que são padrão ao seu tipo.
 
-        `
-            interface Car {
+```java
+interface Car {
 
-                void speedUp(int increment);
-                void brake(int decrement);
-                void turnHeadLightOn();
-                void turnHeadLightOff();
-            }
-        `
+    void speedUp(int increment);
+    void brake(int decrement);
+    void turnHeadLightOn();
+    void turnHeadLightOff();
+}
+```
 
-    * No exemplo acima, foi criada uma interface de carro que tem métodos padrão, porém não implementados, ou seja, a interface define quais métodos uma classe deve ter, mas não define como implementá-los.
+> No exemplo acima, foi criada uma interface de carro que tem métodos padrão, porém não implementados, ou seja, a interface define quais métodos uma classe deve ter, mas não define como implementá-los.
 
-    `
-        class CarX implements Car {
+```java
+class CarX implements Car {
 
-            int speed = 0;
+    int speed = 0;
 
-            void speedUp(int increment) {
-                speed = speed + increment;
-            }
+    void speedUp(int increment) {
+        speed = speed + increment;
+    }
 
-            void brake(int decrement) {
-                // custom implementation goes here
-            }
+    void brake(int decrement) {
+        // custom implementation goes here
+    }
 
-            void turnHeadLightOn() {
-                // custom implementation goes here
-            }
+    void turnHeadLightOn() {
+        // custom implementation goes here
+    }
 
-            void turnHeadLightOff() {
-                // custom implementation goes here
-            }
-        }
-    `
+    void turnHeadLightOff() {
+        // custom implementation goes here
+    }
+}
+```
 
-    `
-        class CarY implements Car {
+```java
+class CarY implements Car {
 
-            int speed = 0;
+    int speed = 0;
 
-            void speedUp(int increment) {
-                speed = speed + increment + 1;
-            }
+    void speedUp(int increment) {
+        speed = speed + increment + 1;
+    }
 
-            void brake(int decrement) {
-                // custom implementation goes here
-            }
+    void brake(int decrement) {
+        // custom implementation goes here
+    }
 
-            void turnHeadLightOn() {
-                // custom implementation goes here
-            }
+    void turnHeadLightOn() {
+        // custom implementation goes here
+    }
 
-            void turnHeadLightOff() {
-                // custom implementation goes here
-            }
-        }
-    `
+    void turnHeadLightOff() {
+        // custom implementation goes here
+    }
+}
+```
 
-    * Nos exemplos acima foram criados dois carros (CarX e CarY), os dois implementam os métodos da interface Car, porém cada um implementa do seu jeito.
+> Nos exemplos acima, foram criados dois carros (CarX e CarY), os dois implementam os métodos da interface Car, porém cada um implementa do seu jeito.
 
 * Pacote
     * Um pacote é um nome (namespace) que organiza um conjunto de classes e interfaces.

@@ -13,7 +13,7 @@ public class PrimitiveDataType {
 		 * Ao declarar uma variável e não inicializá-la, ela assume um valor default:
          *
 		 * Tipo:	Valor Default:
-		 * ------- --------------
+		 * ------- ---------------
          * byte	    0
          * short	0
          * int		0
