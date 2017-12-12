@@ -2,30 +2,30 @@ package jse01.variables;
 
 public class Casting {
 
-	public static void main(String[] args) {
+    public static void main (String[] args) {
 
-		/**
-		 * É possível atribuir uma variável int em uma variável double
-		 * Porém não é possível atribuir uma variável double em uma variável int
-		 * Isso acontece, pois a variável double possuí uma parte decimal
-	 	*/
-		
-		int i = 10;
-		double d;
+        /**
+         * É possível atribuir uma variável int em uma variável double
+         * Porém não é possível atribuir uma variável double em uma variável int
+         * Isso acontece, pois a variável double possuí uma parte decimal
+         */
 
-		d = i;
+        int i = 10;
+        double d;
 
-		/**
-		 * Para fazer o inverso, será necessário fazer o casting da variável
-	 	*/
+        d = i;
 
-		i = (int) d;
+        /**
+         * Para fazer o inverso, será necessário fazer o casting da variável
+         */
 
-		/**
-		 * Utilizando o cast (int) é atribuída somente a parte inteira do número para a variável int
- 		*/
+        i = (int) d;
 
-		System.out.println("int value: " + i);
+        /**
+         * Utilizando o cast (int) é atribuída somente a parte inteira do número para a variável int
+         */
 
-	}
+        System.out.println("int value: " + i);
+
+    }
 }
