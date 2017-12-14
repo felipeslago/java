@@ -7,7 +7,7 @@ public class ThrowNewException {
 	// Lets think there is a method for withdraw a certain amount from an account
 	// But if the passed values is not valid? And if the account doesn't have this amount?
 	// How to tell this to the class who called this method?
-	// Maybe returning a boolean value (true if the operation was success or false if not)?
+	// Maybe returning a boolean value (true if the execute was success or false if not)?
 	// No, it is not the correct way
 	// Doing this, how to separate different type of errors?
 	// Returning a different integer for each situation?
@@ -28,7 +28,7 @@ public class ThrowNewException {
 			// The Exception objects has a constructor that takes a string argument
 			// This argument is a custom message to the exception
 			
-			throw new IllegalArgumentException("There isn't enough balance to complete this operation.");
+			throw new IllegalArgumentException("There isn't enough balance to complete this execute.");
 			
 		}
 	}
