@@ -1,4 +1,4 @@
-package jsez08.enumTypes;
+package jse13.enumTypes;
 
 public class UsingEnum {
 
@@ -6,7 +6,7 @@ public class UsingEnum {
 
         /**
          * Um Enum não precisa ser instanciado
-         * E cada constante dentro ser acessada diretamente, como se fosse uma variável estática
+         * E cada constante pode ser acessada diretamente, como se fosse uma variável estática
          */
 
 		DayTest dayTest = new DayTest(Day.MONDAY);

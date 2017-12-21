@@ -1,4 +1,4 @@
-package jsez09.annotation;
+package jse14.annotations;
 
 public @interface Author { // @interface define o tipo annotation
 
@@ -7,7 +7,6 @@ public @interface Author { // @interface define o tipo annotation
      * São utilizadas para:
      * 1. Prover informações para o compilador, durante o tempo de compilação
      * 2. Serem utilizadas por outros frameworks que as processem em tempo de compilação, execução ou deploy, gerando código ou arquivos
-     *
      */
 
 	String author();

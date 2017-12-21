@@ -3,7 +3,7 @@ package jse12.methodReferences;
 public class MethodReferences {
 
     /**
-     * As expressões lambdas são utilizadas para criar métodos anônimos, porém muitas a expressão apenas chamam um método já existente
+     * As expressões lambdas são utilizadas para criar métodos anônimos, porém muitas vezes a expressão apenas chama um método já existente
      * Nesse caso, o uso de Method References pode facilitar essas chamadas de uma maneira compacta e fácil de entender
      */
 

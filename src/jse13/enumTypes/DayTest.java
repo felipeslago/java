@@ -1,4 +1,4 @@
-package jsez08.enumTypes;
+package jse13.enumTypes;
 
 public class DayTest {
 

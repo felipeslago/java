@@ -1,4 +1,4 @@
-package jsez10.interfaces;
+package jse15.interfaces;
 
 public class MyCar implements OperateCar { // O comando implements determina que a classe MyCar irá implementar o contrato da interface OperateCar
 

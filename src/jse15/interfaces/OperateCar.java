@@ -1,4 +1,4 @@
-package jsez10.interfaces;
+package jse15.interfaces;
 
 public interface OperateCar { // O comando interface determina a criação de uma interface
 
