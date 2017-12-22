@@ -1,4 +1,4 @@
-package jsez11.inheritance;
+package jse16.inheritance;
 
 public class Modifiers {
 

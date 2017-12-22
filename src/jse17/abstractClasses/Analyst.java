@@ -1,4 +1,4 @@
-package jsez12.abstractClasses;
+package jse17.abstractClasses;
 
 public class Analyst extends Employee {
 
