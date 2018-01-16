@@ -1,17 +1,41 @@
 package jse22.exceptions;
 
-@SuppressWarnings("serial")
-public class CustomException extends Exception {
+public class CustomException {
 
-    // It is possible to create custom exceptions
-    // Just extend the class to the Exception class (Exception, IOException, FileNotFoundException)
+    /**
+     * Eh possivel criar exceptions customizadas, que sao muito uteis em casos especificos de regras de negocio, como no
+     * exemplo dado na classe ThrowNewException
+     * <p>
+     * Para criar uma exception customizada, basta criar uma classe e extender de Exception
+     */
 
-    public CustomException() {
-        super();
+    class AnotherException extends Exception {
+
+        /**
+         * A classe Exception ja possui alguns construtores que podem auxiliar na hora da criacao da exception
+         * customizada
+         */
+
+        public AnotherException() {
+            super();
+        }
+
+        public AnotherException(String message) {
+            super(message);
+        }
     }
 
-    public CustomException(String message) {
-        super(message); // It is calling the constructor from the superclass
+    void execute() throws AnotherException {
+        throw new AnotherException("Lancando uma excecao customizada");
+    }
+
+    public static void main(String[] args) {
+        CustomException customException = new CustomException();
+        try {
+            customException.execute();
+        } catch (AnotherException e) {
+            e.printStackTrace();
+        }
     }
 
 }

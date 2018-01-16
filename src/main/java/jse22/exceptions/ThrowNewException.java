@@ -4,33 +4,26 @@ public class ThrowNewException {
 
     public double balance;
 
-    // Lets think there is a method for withdraw a certain amount from an account
-    // But if the passed values is not valid? And if the account doesn't have this amount?
-    // How to tell this to the class who called this method?
-    // Maybe returning a boolean value (true if the execute was success or false if not)?
-    // No, it is not the correct way
-    // Doing this, how to separate different type of errors?
-    // Returning a different integer for each situation?
-    // Neither too
-    // Simple, just throw an exception
+    /**
+     * Imagine que temos um metodo que realiza saques da conta de clientes
+     *
+     * Como faremos para avisar o metodo chamador que o valor passado eh invalido ou que o cliente nao tem saldo?
+     *
+     * As exceptions sao bem indicadas para esse caso
+     */
 
     public void withdram(double value) {
 
+        /**
+         * Atraves do comando throw new eh possivel lancar uma nova excecao em qualquer lugar do codigo
+         *
+         * Dessa maneira, o chamador sabera qual erro ocorreu a partir da exception lancada
+         */
+
         if (value == 0) {
-            throw new IllegalArgumentException(); // This exception is an unchecked exception, so it doesn't obligate
-                                                  // treatments
-
-            // To obligate a treatment, this method must have a throw declaration
-            // Like this: 'public void withdraw(double value) throws IOException {'
-
+            throw new IllegalArgumentException("Valor informado invalido para saque");
         } else if (this.balance < value) {
-
-            // But just throwing a new exception do not tell the real reason of exception
-            // The Exception objects has a constructor that takes a string argument
-            // This argument is a custom message to the exception
-
-            throw new IllegalArgumentException("There isn't enough balance to complete this execute.");
-
+            throw new IllegalArgumentException("Nao ha saldo suficiente para executar esta operacao");
         }
     }
 
