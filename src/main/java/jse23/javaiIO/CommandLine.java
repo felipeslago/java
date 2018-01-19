@@ -9,7 +9,7 @@ public class CommandLine {
 
     public static void main(String[] args) throws IOException {
         /**
-         * Através das classes InputStreamReader e BufferedReader eh possivel ler dados do console do usuario (linha de
+         * Atraves das classes InputStreamReader e BufferedReader eh possivel ler dados do console do usuario (linha de
          * comando) usando o objeto System.in
          *
          * A cada chamado ao metodo readLine o programa fica aguardando por input de dados pelo usuario, que serao lidos
@@ -23,7 +23,7 @@ public class CommandLine {
         System.out.println(input);
 
         /**
-         * A classe Console oferece uma maneira mais avançada e segura de obter informacoes via linha de comando do
+         * A classe Console oferece uma maneira mais avancada e segura de obter informacoes via linha de comando do
          * usuario
          *
          * Alem de possuir todas as features das Streams, ainda conta com um metodo readPassword, para tratar de maneira

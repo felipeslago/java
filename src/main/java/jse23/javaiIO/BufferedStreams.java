@@ -12,7 +12,7 @@ public class BufferedStreams {
 
         /**
          * As classes de Byte Stream e Character Stream utilizam um conceito chamado unbuffered I/O, ou seja, toda vez
-         * que um dado eh lido ou gravado, o sistema operacional tem que realizar os acessos necessários para realizar a
+         * que um dado eh lido ou gravado, o sistema operacional tem que realizar os acessos necessarios para realizar a
          * operacao, deixando o programa muito pouco eficiente
          *
          * Para auxiliar a leitura e escrita de arquivos, sem consumir muito do sistema operacional, o Java dispoe das
