@@ -2,13 +2,13 @@ package jse24.concurrency;
 
 import java.util.List;
 
-public class Number implements Runnable {
+public class _Number implements Runnable {
 
     int start;
     int end;
     List<Integer> numbers;
 
-    public Number(int start, int end, List<Integer> numbers) {
+    public _Number(int start, int end, List<Integer> numbers) {
         this.start = start;
         this.end = end;
         this.numbers = numbers;

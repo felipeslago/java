@@ -16,7 +16,7 @@ public class TypeComparisonOperator {
 
         System.out.println("obj e instancia de Double: " + (obj instanceof Double));
 
-        System.out.println("obj e extende de Number: " + (obj instanceof Number));
+        System.out.println("obj e extende de _Number: " + (obj instanceof Number));
 
         System.out.println("obj e implementa Comparable: " + (obj instanceof Comparable));
 

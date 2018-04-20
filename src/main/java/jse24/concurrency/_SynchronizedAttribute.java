@@ -3,7 +3,7 @@ package jse24.concurrency;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SynchronizedAttribute {
+public class _SynchronizedAttribute {
 
     public static void main(String[] args) throws InterruptedException {
 
@@ -15,10 +15,10 @@ public class SynchronizedAttribute {
 
         List<Integer> numbers = new ArrayList<>();
 
-        Number n1 = new Number(0, 10000, numbers);
+        _Number n1 = new _Number(0, 10000, numbers);
         Thread t1 = new Thread(n1);
 
-        Number n2 = new Number(10000, 20000, numbers);
+        _Number n2 = new _Number(10000, 20000, numbers);
         Thread t2 = new Thread(n2);
 
         t1.start();

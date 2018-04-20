@@ -5,7 +5,7 @@ public class BoundedTypeParameters {
     /**
      * A notacao Bounded Type Parameters auxilia na restricao do tipo generico que sera passado na criacao da classe
      *
-     * No caso da classe abaixo, somente serao aceitos tipos que descendem de Number (Integer, Long, Float e etc.)
+     * No caso da classe abaixo, somente serao aceitos tipos que descendem de _Number (Integer, Long, Float e etc.)
      */
 
     class Numbers<T extends Number> {
@@ -19,7 +19,7 @@ public class BoundedTypeParameters {
             return t.intValue();
 
             /**
-             * Como especificamos o "tipo pai", ja temos a disposicao alguns metodos padrao da classe Number
+             * Como especificamos o "tipo pai", ja temos a disposicao alguns metodos padrao da classe _Number
              */
         }
     }
@@ -45,9 +45,9 @@ public class BoundedTypeParameters {
         System.out.println(longNumbers.getIntValue());
 
         /**
-         * Se tentarmos criar um objeto Numbers do tipo String, a IDE ira deixar a classe com erro
+         * Se tentarmos criar um objeto _Numbers do tipo String, a IDE ira deixar a classe com erro
          *
-         * Ex.: Numbers<String> stringNumbers = new Numbers<String>();
+         * Ex.: _Numbers<String> stringNumbers = new _Numbers<String>();
          */
 
         String text1 = "Hello";

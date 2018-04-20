@@ -1,10 +1,10 @@
 package jse24.concurrency;
 
-public class Numbers implements Runnable {
+public class _Numbers implements Runnable {
 
     String thread;
 
-    public Numbers(String thread) {
+    public _Numbers(String thread) {
         this.thread = thread;
     }
 

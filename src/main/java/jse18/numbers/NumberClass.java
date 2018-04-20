@@ -23,8 +23,8 @@ public class NumberClass {
         Character character;
 
         /**
-         * Todas as classes wrapper numericas extendem da classe abstrata Number A classe abstrata Number por sua vez ja
-         * possui metodos abstrator que devem ser implementados pelas classes que a extendem Dessa forma e possivel
+         * Todas as classes wrapper numericas extendem da classe abstrata _Number A classe abstrata _Number por sua vez
+         * ja possui metodos abstrator que devem ser implementados pelas classes que a extendem Dessa forma e possivel
          * fazer o uso do polimorfismo
          */
 

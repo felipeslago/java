@@ -20,7 +20,7 @@ public class Wildcards {
     }
 
     /**
-     * Este metodo recebe uma lista de um tipo desconhecido, desde que seja descendente de Number (Upper Bounded)
+     * Este metodo recebe uma lista de um tipo desconhecido, desde que seja descendente de _Number (Upper Bounded)
      */
 
     static void printNumber(List<? extends Number> list) {
@@ -31,7 +31,7 @@ public class Wildcards {
 
     /**
      * Este metodo recebe uma lista de um tipo desconhecido, porem restrito a classes que suportem Integer, como a
-     * propria classe Integer, Number ou Object (Lower Bounded)
+     * propria classe Integer, _Number ou Object (Lower Bounded)
      */
 
     static void printInteger(List<? super Integer> list) {
