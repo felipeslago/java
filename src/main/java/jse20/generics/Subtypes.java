@@ -9,7 +9,7 @@ public class Subtypes {
     /**
      * Um erro bastante comum ao comecar a trablhar com generics e confundir os subtipos
      *
-     * A classe _Numbers aceita um tipo generico, enquanto o metodo sum aceita a classe _Numbers do tipo _Number
+     * A classe _Numbers aceita um tipo generico, enquanto o metodo doWork aceita a classe _Numbers do tipo _Number
      *
      * Porem, isso nao significa que podemos passar qualquer descendente de number, podemos utilizar somente number
      */
@@ -25,7 +25,7 @@ public class Subtypes {
         sum(numberNumbers);
 
         Numbers<Double> doubleNumbers = new Numbers<>();
-        // sum(doubleNumbers); // nao compila
+        // doWork(doubleNumbers); // nao compila
     }
 
     /**

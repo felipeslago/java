@@ -22,7 +22,7 @@ public class Deadlock {
         }
 
         public synchronized void bow(Friend bower) {
-            System.out.println(name + " has bowed.");
+            System.out.println(bower.name + " has bowed.");
             bower.bowBack(this);
         }
 
